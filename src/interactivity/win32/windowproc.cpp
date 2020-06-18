@@ -675,7 +675,7 @@ using namespace Microsoft::Console::Types;
 
         // Don't fall back to Beep() on win32 systems -- if the user configures their system for no sound, we should
         // respect that.
-        PlaySoundW((LPCWSTR)SND_ALIAS_SYSTEMHAND, nullptr, SND_ALIAS_ID | SND_ASYNC | SND_SENTRY);
+        PlaySoundW((LPCWSTR)SND_ALIAS_SYSTEMDEFAULT, nullptr, SND_ALIAS_ID | SND_ASYNC | SND_SENTRY);
         break;
     }
 
